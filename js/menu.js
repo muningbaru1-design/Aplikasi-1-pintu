@@ -2,13 +2,13 @@
    MEMBUAT GRID MENU OTOMATIS
 =========================================== */
 
-const grid=document.getElementById("gridMenu");
+const grid = document.getElementById("gridMenu");
 
-gridMenu.forEach(menu=>{
+gridMenu.forEach(menu => {
 
-grid.innerHTML+=`
+grid.innerHTML += `
 
-<div class="grid-item" onclick="bukaMenu('${menu.id}')">
+<div class="grid-item" onclick="window.location.href='${menu.link}'">
 
 <i class="bi ${menu.icon}"
 style="color:${menu.warna};"></i>
